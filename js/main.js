@@ -13,14 +13,23 @@ if (navToggle && navLinks) {
     navToggle.classList.toggle("open", open);
     navToggle.setAttribute("aria-expanded", String(open));
   });
+  const closeMenu = () => {
+    navLinks.classList.remove("open");
+    navToggle.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  };
   // close menu when a link is tapped
-  navLinks.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      navToggle.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-    })
-  );
+  navLinks.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+  // close menu when tapping outside it
+  document.addEventListener("click", (e) => {
+    if (navLinks.classList.contains("open") && !navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
+  // close menu with the Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
 }
 
 // ---------- Scroll reveal ----------

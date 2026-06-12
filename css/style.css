@@ -41,6 +41,9 @@
 
 html { scroll-behavior: smooth; }
 
+/* anchored sections (#quote, #nile-harvest, …) must clear the sticky 78px nav */
+[id] { scroll-margin-top: 92px; }
+
 body {
   font-family: var(--font-body);
   font-size: 17px;
@@ -48,7 +51,10 @@ body {
   color: var(--ink);
   background: var(--paper);
   -webkit-font-smoothing: antialiased;
+  /* the tilted marquee pokes ~6px past the viewport — clip it so phones
+     can't pan/rubber-band sideways (clip > hidden: no scroll box at all) */
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img, svg { display: block; max-width: 100%; }
@@ -68,6 +74,9 @@ body::after {
   opacity: 0.05;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
 }
+
+/* main wraps the tilted marquee — clip its sideways overhang at the source */
+main { overflow-x: clip; }
 
 .container {
   max-width: var(--container);
@@ -820,7 +829,7 @@ h1, h2, h3, h4 {
 }
 .company-logo img { width: 100%; height: 100%; object-fit: cover; border-radius: 24px; }
 
-.company-meta { flex: 1; min-width: 280px; }
+.company-meta { flex: 1; min-width: min(280px, 100%); }
 .company-meta h2 { margin-bottom: 6px; }
 .company-meta .partner-sector { margin-bottom: 14px; }
 .company-meta p { color: var(--ink-soft); max-width: 64ch; }
@@ -1224,4 +1233,16 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .sphere-aqua .sphere-letter { font-size: 58px; }
   .brand-logo { height: 48px; }
   .sphere-orange-lg { width: 120px; height: 120px; }
+}
+
+/* small phones — tighten gutters so text and buttons breathe */
+@media (max-width: 420px) {
+  .container { padding: 0 20px; }
+  .nav-links { padding: 16px 20px 24px; }
+  .btn { padding: 14px 24px; font-size: 0.95rem; }
+  .btn-ghost { padding: 12px 22px; }
+  .cta-band { padding: 48px 24px; }
+  .contact-form { padding: 32px 22px; }
+  .hero-actions { gap: 12px; }
+  .display { font-size: clamp(2.3rem, 11vw, 2.8rem); }
 }
