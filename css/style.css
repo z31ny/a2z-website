@@ -1014,6 +1014,7 @@ h1, h2, h3, h4 {
 }
 .footer .brand-text .brand-name { color: var(--white); }
 .footer .brand-text .brand-sub { color: rgba(247, 246, 242, 0.5); }
+.footer-logo { height: 96px; width: auto; }
 .footer-tagline { margin-top: 18px; max-width: 34ch; font-size: 0.95rem; }
 .footer h5 {
   font-family: var(--font-display);
@@ -1192,6 +1193,7 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 44px; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
 }
 
 /* the bilingual nav needs more room — collapse to hamburger early */
@@ -1223,7 +1225,10 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .product-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .cta-band { padding: 56px 32px; }
-  .footer-grid { grid-template-columns: 1fr; }
+  /* footer keeps its desktop columns: logo row, then Site | Get in touch */
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .footer-logo { height: 84px; }
   .hero { padding: 56px 0 80px; }
   .hero-art { height: 300px; }
   .sphere-aqua { width: 210px; height: 210px; }
