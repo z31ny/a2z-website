@@ -1159,9 +1159,6 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
 [dir="rtl"] a[href^="mailto"],
 [dir="rtl"] a[href^="tel"] { direction: ltr; unicode-bidi: embed; display: inline-block; }
 
-@media (max-width: 1020px) {
-  .trade-grid { grid-template-columns: 1fr; }
-}
 @media (max-width: 680px) {
   .lang-toggle { padding: 7px 13px; font-size: 0.82rem; }
 }
@@ -1223,7 +1220,7 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
 
 @media (max-width: 680px) {
   .section { padding: 78px 0; }
-  .pillars, .partners-grid, .product-grid, .steps { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .cta-band { padding: 56px 32px; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -1233,6 +1230,56 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .sphere-aqua .sphere-letter { font-size: 58px; }
   .brand-logo { height: 48px; }
   .sphere-orange-lg { width: 120px; height: 120px; }
+
+  /* hero buttons stay side by side */
+  .hero-actions { flex-wrap: nowrap; gap: 10px; }
+  .hero-actions .btn {
+    flex: 1 1 0;
+    justify-content: center;
+    padding: 13px 10px;
+    font-size: 0.9rem;
+  }
+  .hero-actions .arrow { display: none; }
+
+  /* "what we do" pillars 2-up (third spans the row) */
+  .pillars { gap: 14px; }
+  .pillar { padding: 26px 18px 24px; border-radius: 20px; }
+  .pillar:last-child { grid-column: 1 / -1; }
+  .pillar-icon { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 16px; }
+  .pillar-icon svg { width: 22px; height: 22px; }
+  .pillar h3 { font-size: 1.02rem; }
+  .pillar p { font-size: 0.86rem; }
+
+  /* export / import cards stay side by side */
+  .trade-grid { gap: 14px; }
+  .trade-card { padding: 26px 18px 24px; border-radius: 20px; }
+  .trade-card .pillar-icon { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 16px; }
+  .trade-card h3 { font-size: 1.02rem; }
+  .trade-card > p { font-size: 0.86rem; }
+  .trade-list { margin-top: 14px; gap: 8px; }
+  .trade-list li { font-size: 0.84rem; gap: 8px; }
+
+  /* partner cards become a swipeable carousel (next card peeks in) */
+  .partners-grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -28px;
+    padding: 4px 28px 20px;
+    scrollbar-width: none;
+  }
+  .partners-grid::-webkit-scrollbar { display: none; }
+  .partners-grid .partner-card { flex: 0 0 76%; scroll-snap-align: center; }
+
+  /* steps 2x2: 01-02 then 03-04 */
+  .steps { gap: 14px; }
+  .step { padding: 60px 16px 22px; }
+  .step::before { font-size: 2.4rem; top: 12px; left: 14px; }
+  [dir="rtl"] .step::before { left: auto; right: 14px; }
+  .step h4 { font-size: 0.98rem; }
+  .step p { font-size: 0.85rem; }
 }
 
 /* small phones — tighten gutters so text and buttons breathe */
@@ -1245,4 +1292,7 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .contact-form { padding: 32px 22px; }
   .hero-actions { gap: 12px; }
   .display { font-size: clamp(2.3rem, 11vw, 2.8rem); }
+  /* match the carousel's edge bleed to the narrower gutter */
+  .partners-grid { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+  .hero-actions .btn { font-size: 0.85rem; padding: 12px 8px; }
 }
