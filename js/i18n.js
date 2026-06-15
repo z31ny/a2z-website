@@ -103,6 +103,34 @@ const I18N = {
     cd_products: "Products",
     cd_export_label: "Export markets",
 
+    // products page section headings
+    ps_own: "Our own product",
+    ps_factory: "Our partner factory",
+    ps_companies: "Partner companies",
+
+    // A2Z GOLD Tuna (our own product)
+    gt_badge: "A2Z own brand",
+    gt_name: "GOLD Tuna",
+    gt_tagline: "Premium Egyptian canned tuna",
+    gt_card_d: "Our own brand of solid tuna, offered in a choice of fine oils. Full product details coming soon.",
+    gt_cta: "View product <span class=\"arrow\">→</span>",
+    gt_sector: "Canned Tuna · A2Z own brand",
+    gt_intro: "GOLD is A2Z Egypt Company's own brand of premium solid tuna, packed in 185 g cans and offered in a choice of fine oils. A full description — varieties, ingredients, and certifications — is coming soon.",
+    gt_var1: "In olive oil", gt_var2: "In sunflower oil", gt_var3: "In spring water", gt_var4: "Solid · 185 g",
+    gt_varieties_label: "Varieties",
+    gt_vc_tag: "Variety",
+    gt_vc1_t: "In Olive Oil", gt_vc1_d: "Solid tuna packed in olive oil.",
+    gt_vc2_t: "In Sunflower Oil", gt_vc2_d: "Solid tuna packed in sunflower oil.",
+    gt_vc3_t: "In Spring Water", gt_vc3_d: "Solid tuna packed in spring water.",
+    gt_soon: "Full specifications and certifications coming soon.",
+
+    // Partner factory (placeholder until details arrive)
+    co_factory_name: "Partner Factory",
+    factory_sector: "Food Manufacturing",
+    factory_card_d: "A manufacturing partner — its name, products, and full details are coming soon.",
+    factory_intro: "Details about our partner factory and its product range are coming soon.",
+    factory_soon: "Products coming soon.",
+
     // Kaha Company for Preserved Foods
     k_sector: "Canned & Preserved Foods · Est. 1940 · Kaha, Qalyubia",
     k_intro: "Egypt's first canned and preserved food company, established in 1940 in Kaha, Qalyubia. Today it operates seven factories across Qalyubia, Sharqeya, Alexandria, and Beheira, running 19 production lines. ISO 9001 certified, it is a subsidiary of the Holding Company for Food Industries under Egypt's Ministry of Supply.",
@@ -262,6 +290,34 @@ const I18N = {
     cd_back: "كل الشركات",
     cd_products: "المنتجات",
     cd_export_label: "أسواق التصدير",
+
+    // عناوين أقسام صفحة المنتجات
+    ps_own: "منتجنا الخاص",
+    ps_factory: "مصنعنا الشريك",
+    ps_companies: "الشركات الشريكة",
+
+    // تونة جولد (منتج A2Z الخاص)
+    gt_badge: "علامة A2Z الخاصة",
+    gt_name: "تونة جولد",
+    gt_tagline: "تونة مصرية معلّبة فاخرة",
+    gt_card_d: "علامتنا الخاصة من التونة الصلبة، متوفّرة بتشكيلة من أجود الزيوت. تفاصيل المنتج الكاملة قريبًا.",
+    gt_cta: "استعرض المنتج <span class=\"arrow\">→</span>",
+    gt_sector: "تونة معلّبة · علامة A2Z الخاصة",
+    gt_intro: "جولد هي علامة شركة A2Z إيجيبت الخاصة من التونة الصلبة الفاخرة، تُعبّأ في علب 185 جم وتتوفّر بتشكيلة من أجود الزيوت. وصف كامل — الأنواع والمكوّنات والشهادات — قريبًا.",
+    gt_var1: "بزيت الزيتون", gt_var2: "بزيت دوار الشمس", gt_var3: "في ماء نقي", gt_var4: "صلبة · 185 جم",
+    gt_varieties_label: "الأنواع",
+    gt_vc_tag: "نوع",
+    gt_vc1_t: "بزيت الزيتون", gt_vc1_d: "تونة صلبة معبّأة بزيت الزيتون.",
+    gt_vc2_t: "بزيت دوار الشمس", gt_vc2_d: "تونة صلبة معبّأة بزيت دوار الشمس.",
+    gt_vc3_t: "في ماء نقي", gt_vc3_d: "تونة صلبة معبّأة في ماء نقي.",
+    gt_soon: "المواصفات والشهادات الكاملة قريبًا.",
+
+    // المصنع الشريك (مؤقت حتى تصل التفاصيل)
+    co_factory_name: "المصنع الشريك",
+    factory_sector: "تصنيع غذائي",
+    factory_card_d: "شريك تصنيعي — اسمه ومنتجاته وتفاصيله الكاملة قريبًا.",
+    factory_intro: "تفاصيل عن مصنعنا الشريك وقائمة منتجاته قريبًا.",
+    factory_soon: "المنتجات قريبًا.",
 
     // شركة قها للأغذية المحفوظة
     k_sector: "أغذية محفوظة ومعلّبة · تأسست 1940 · قها، القليوبية",

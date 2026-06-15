@@ -960,6 +960,108 @@ h1, h2, h3, h4 {
 }
 .export-note p { color: var(--ink); font-size: 1rem; }
 
+/* ---------- Featured own product (GOLD Tuna) ---------- */
+.logo-chip.tone-aqua,
+.detail-logo.chip.tone-aqua {
+  background: radial-gradient(circle at 32% 28%, #7adcec, var(--aqua-deep));
+}
+
+.product-feature {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  background: linear-gradient(135deg, var(--white), var(--aqua-pale));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+}
+.product-feature:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+.product-feature-media {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+}
+.product-feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feature-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--orange);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(217, 91, 35, 0.35);
+}
+[dir="rtl"] .feature-badge { left: auto; right: 20px; }
+.feature-badge.inline {
+  position: static;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.product-feature-body {
+  padding: 48px 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-feature-body .partner-sector { margin-bottom: 8px; }
+.product-feature-body h2 { margin-bottom: 16px; }
+.product-feature-desc { color: var(--ink-soft); font-size: 1.02rem; margin-bottom: 22px; max-width: 46ch; }
+
+.variety-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.variety-chips span {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--aqua-deep);
+  background: rgba(37, 182, 207, 0.12);
+  border: 1px solid rgba(37, 182, 207, 0.25);
+  border-radius: 999px;
+  padding: 7px 15px;
+}
+.product-feature:hover .card-cta-link { color: var(--orange); }
+.product-feature:hover .card-cta-link .arrow { transform: translateX(5px); }
+
+/* product detail: large product shot + gallery */
+.product-shot {
+  flex-shrink: 0;
+  width: 340px;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+}
+.product-shot img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1 / 1; }
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+.product-gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
 .company-section {
   padding: 80px 0;
   border-top: 1px solid var(--line);
@@ -1404,6 +1506,16 @@ html[lang="ar"] .underline-orange::after { bottom: -0.05em; }
   .fact { padding: 14px 10px; }
   .fact-v { font-size: 1.4rem; }
   .export-note { padding: 20px 22px; }
+
+  /* featured product + product detail stack */
+  .product-feature { grid-template-columns: 1fr; }
+  .product-feature-media { min-height: 240px; }
+  .product-feature-body { padding: 30px 24px; }
+  .product-feature-desc { max-width: none; }
+  .variety-chips { justify-content: center; }
+  .product-feature .variety-chips { justify-content: flex-start; }
+  .product-shot { width: min(280px, 100%); }
+  .product-gallery { grid-template-columns: 1fr; gap: 16px; }
   /* footer keeps its desktop columns: logo row, then Site | Get in touch */
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .footer-grid > div:first-child { grid-column: 1 / -1; }
