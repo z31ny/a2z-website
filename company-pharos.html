@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products — A2Z Egypt Company</title>
-  <meta name="description" content="The Egyptian companies A2Z Egypt Company exports for — tap any company to see its full profile and product range." />
+  <title>Pharos Building Materials — A2Z Egypt Company</title>
+  <meta name="description" content="Pharos Building Materials — natural stone and ceramics from Egyptian quarries: ceramic tiles, Galala and Sunny marble, and Aswan granite." />
 
   <script>(function(){var l=localStorage.getItem("a2z-lang")==="ar"?"ar":"en";document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";})();</script>
 
@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Cairo:wght@400..800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body data-page="products">
+<body data-page="company">
 
   <!-- ============ NAVIGATION ============ -->
   <header class="nav">
@@ -42,47 +42,45 @@
   </header>
 
   <main>
-    <!-- ============ PAGE HERO ============ -->
-    <section class="page-hero">
+    <!-- ============ COMPANY HEADER ============ -->
+    <section class="page-hero company-detail">
       <div class="container">
-        <span class="eyebrow" data-i18n="pr_eyebrow">Our products</span>
-        <h1 class="display" data-i18n="pr_title">Made in Egypt,<br />shipped <span class="accent-aqua">everywhere</span><span class="accent-orange">.</span></h1>
-        <p class="lede" data-i18n="pr_lede">
-          Each company below is a partner we know personally, audit regularly, and
-          stand behind fully. Tap any one to see its full profile and product range.
-        </p>
+        <a href="products.html" class="back-link"><span class="arrow-back">←</span> <span data-i18n="cd_back">All companies</span></a>
+
+        <div class="detail-head reveal">
+          <div class="detail-logo chip tone-navy">PM</div>
+          <div class="detail-meta">
+            <h1 class="h2" data-i18n="co3_name">Pharos Building Materials</h1>
+            <p class="partner-sector" data-i18n="c3_sector">Construction · Cairo &amp; Upper Egypt</p>
+            <p class="detail-intro" data-i18n="c3_d">Quarries in Upper Egypt and a finishing plant outside Cairo supply natural stone and ceramics to construction projects in the Gulf, Africa, and Europe.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ============ COMPANY CARDS ============ -->
-    <section class="section" style="padding-top: 40px;">
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section" style="padding-top: 30px;">
       <div class="container">
-        <div class="company-cards">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="cd_products">Products</span>
+        </div>
 
-          <a href="company-kaha.html" class="company-card reveal">
-            <div class="company-card-logo"><img src="assets/kaha.png" alt="Kaha" /></div>
-            <h3 class="h3" data-i18n="co1_name">Kaha Company for Preserved Foods</h3>
-            <p class="partner-sector" data-i18n="pc1_sector">Canned &amp; Preserved Foods</p>
-            <p class="company-card-desc" data-i18n="pc1_d">Egypt's first preserved-food company, founded in 1940 — juices, jams, frozen vegetables, pickles, and tomato products from seven factories nationwide.</p>
-            <span class="card-cta-link" data-i18n="card_cta">View products <span class="arrow">→</span></span>
-          </a>
-
-          <a href="company-delta.html" class="company-card reveal reveal-d1">
-            <div class="company-card-logo"><span class="logo-chip tone-orange">DT</span></div>
-            <h3 class="h3" data-i18n="co2_name">Delta Textile Mills</h3>
-            <p class="partner-sector" data-i18n="pc2_sector">Cotton &amp; Textiles</p>
-            <p class="company-card-desc" data-i18n="pc2_d">Towels, bed linen, and garments woven from world-famous Egyptian long-staple cotton.</p>
-            <span class="card-cta-link" data-i18n="card_cta">View products <span class="arrow">→</span></span>
-          </a>
-
-          <a href="company-pharos.html" class="company-card reveal reveal-d2">
-            <div class="company-card-logo"><span class="logo-chip tone-navy">PM</span></div>
-            <h3 class="h3" data-i18n="co3_name">Pharos Building Materials</h3>
-            <p class="partner-sector" data-i18n="pc3_sector">Construction</p>
-            <p class="company-card-desc" data-i18n="pc3_d">Ceramic tiles, marble, and granite quarried and finished in Egypt for projects across three continents.</p>
-            <span class="card-cta-link" data-i18n="card_cta">View products <span class="arrow">→</span></span>
-          </a>
-
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <span class="product-tag" data-i18n="c3p1_tag">Ceramics</span>
+            <h4 data-i18n="c3p1_t">Ceramic &amp; Porcelain Tiles</h4>
+            <p data-i18n="c3p1_d">Glazed wall and floor tiles in standard and large formats, with full crate packing for sea freight.</p>
+          </article>
+          <article class="product-card reveal reveal-d1">
+            <span class="product-tag" data-i18n="c3p2_tag">Stone</span>
+            <h4 data-i18n="c3p2_t">Marble — Galala &amp; Sunny</h4>
+            <p data-i18n="c3p2_d">Egypt's signature beige marbles, cut to slabs or tiles, polished, honed, or brushed to order.</p>
+          </article>
+          <article class="product-card reveal reveal-d2">
+            <span class="product-tag" data-i18n="c3p3_tag">Stone</span>
+            <h4 data-i18n="c3p3_t">Granite — Red Aswan &amp; Grey</h4>
+            <p data-i18n="c3p3_d">The granite of the pharaohs — quarried in Aswan, finished for cladding, flooring, and monuments.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -92,10 +90,10 @@
       <div class="container">
         <div class="cta-band reveal">
           <div>
-            <h2 class="h2" data-i18n="pcta_title">Don't see the product you're looking for?</h2>
-            <p data-i18n="pcta_d">Our partner network covers far more than this page. Tell us what you need — export or import — and we'll source it from a certified supplier.</p>
+            <h2 class="h2" data-i18n="cta_title">Looking for Egyptian products at factory-direct prices?</h2>
+            <p data-i18n="cta_d">Tell us what you're buying and where you're shipping. We'll handle the rest — from A to Z.</p>
           </div>
-          <a href="contact.html#quote" class="btn btn-orange" data-i18n="pcta_btn">Ask us to source it <span class="arrow">→</span></a>
+          <a href="contact.html#quote" class="btn btn-orange" data-i18n="cta_btn">Request a quote <span class="arrow">→</span></a>
         </div>
       </div>
     </section>

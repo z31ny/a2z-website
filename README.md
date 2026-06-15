@@ -23,15 +23,19 @@ business Arabic), not literal translation — keep it that way when editing.
    - `js/main.js` (the `COMPANY_EMAIL` constant — this is where the contact form sends inquiries)
    - the footer of all three HTML pages
    - the contact cards in `contact.html`
-2. **Partner companies & products** — `products.html` currently contains three **sample** partner
-   companies (Nile Harvest Foods, Delta Textile Mills, Pharos Building Materials) with sample
-   products. Replace names, descriptions, and products with the real partners.
-   Each company section follows the same copy-pasteable structure (`<section class="company-section">`).
-3. **Partner logos** — each company currently shows a colored monogram chip (e.g. "NH").
-   To use a real logo, put the image in `assets/` and replace the chip contents:
-   ```html
-   <div class="company-logo"><img src="assets/partner-name.png" alt="Partner Name logo"></div>
-   ```
+2. **Partner companies** — `products.html` shows one **card per company** (logo, name, short
+   description) that links to that company's own detail page (`company-<slug>.html`). The first
+   company, **Kaha Company for Preserved Foods**, is real; **Delta Textile Mills** and **Pharos
+   Building Materials** are still **samples** — replace them with real partners.
+   To add or edit a company:
+   - Card on `products.html` (and the matching teaser card in `index.html`'s partners section).
+   - A detail page — copy `company-kaha.html` to `company-<newslug>.html` and update its content.
+   - All wording lives in `js/i18n.js`: company names are `co1_name`/`co2_name`/`co3_name`; Kaha's
+     profile, facts, and products use the `k_*` keys; the sample companies reuse `c2_*`/`c3_*`.
+3. **Partner logos** — Kaha uses its real logo at `assets/kaha.png`; the sample companies show a
+   colored monogram chip (e.g. "DT"). To give a company a real logo, drop the image in `assets/`
+   and swap the chip for an `<img>` (see how `assets/kaha.png` is used in the Kaha card and on
+   `company-kaha.html`).
 4. **Stats on the home page** — the numbers (12 partners, 40 product lines, 18 countries) are
    estimates. Edit them in `index.html` (look for `data-count`).
 4b. **Import categories** — the "We import for the Egyptian market" card on the home page lists
