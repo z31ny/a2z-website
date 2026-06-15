@@ -24,7 +24,7 @@ const I18N = {
     // ---- home: hero ----
     hero_note: "من مصر إلى العالم",
     hero_title: "From Egypt<br />to <span class=\"underline-orange\">the world</span><span class=\"accent-orange\">.</span>",
-    hero_lede: "A2Z Egypt Company connects trusted Egyptian manufacturers with buyers worldwide. We handle everything from A to Z — sourcing, quality control, documentation, and shipping — so their products reach your market, on time.",
+    hero_lede: "A2Z Egypt Company is the link between leading manufacturers — Egyptian ones above all — and buyers around the world. We handle every step from A to Z: choosing the factories, verifying quality, reviewing the paperwork, and shipping with full tracking until your goods reach your market on time. And we welcome every piece of client feedback, so we can act on it and grow together.",
     hero_btn_products: "Explore our products <span class=\"arrow\">→</span>",
     hero_btn_talk: "Talk to us",
 
@@ -52,7 +52,7 @@ const I18N = {
     trade_title: "We export — and we import, too",
     tx_t: "We export Egyptian products",
     tx_d: "Factory-direct Egyptian goods — sourced, inspected, and shipped to buyers in more than 18 countries.",
-    tx_l1: "Foods of every kind — juices, jams, sauces, pickles, mineral water, processed meats, tuna, biscuits, legumes, and fresh, frozen & dried fruits and vegetables, and more",
+    tx_l1: "Foods of every kind — juices, jams, sauces, pickles, mineral water, processed meats, biscuits, legumes, and fresh, frozen & dried fruits and vegetables, and more",
     tx_l2: "Cotton textiles & linens",
     tx_l3: "Household cleaners & detergent ingredients",
     tx_l4: "Building materials, marble & granite",
@@ -61,6 +61,7 @@ const I18N = {
     ti_l1: "Industrial raw materials",
     ti_l2: "Machinery & spare parts",
     ti_l3: "A variety of food products",
+    ti_l4: "Tuna",
 
     // ---- home: partners ----
     partners_eyebrow: "Our partners",
@@ -161,8 +162,8 @@ const I18N = {
 
     // ---- home: hero ----
     hero_note: "From Egypt to the world",
-    hero_title: "من مصر<br />إلى <span class=\"underline-orange\">العالم كله</span><span class=\"accent-orange\">.</span>",
-    hero_lede: "شركة A2Z إيجيبت هي همزة الوصل بين المصانع المصرية الموثوقة والمشترين حول العالم. نتولّى كل خطوة من الألف إلى الياء — اختيار المصنع، ومراقبة الجودة، والمستندات، والشحن — حتى تصل البضاعة إلى سوقك في موعدها.",
+    hero_title: "من مصر<br />إلى <span class=\"underline-orange\">العالم أجمع</span><span class=\"accent-orange\">.</span>",
+    hero_lede: "شركة A2Z إيجيبت هي همزة الوصل بين أكبر المصانع — خاصةً المصرية — والمشترين حول العالم. نتولّى كل خطوة من الألف إلى الياء: اختيار المصانع، والتأكد من الجودة، ومراجعة المستندات، والشحن مع المتابعة حتى تصل البضائع إلى سوقك في موعدها. ونرحّب بأي ملاحظات من عملائنا لتلافيها مستقبلًا، لننجح معًا.",
     hero_btn_products: "استعرض منتجاتنا <span class=\"arrow\">→</span>",
     hero_btn_talk: "كلّمنا",
 
@@ -190,7 +191,7 @@ const I18N = {
     trade_title: "نُصدّر... ونستورد أيضًا",
     tx_t: "نصدّر منتجات مصر إلى العالم",
     tx_d: "بضائع مصرية بسعر المصنع — نختارها ونفحصها ونشحنها إلى مشترين في أكثر من 18 دولة.",
-    tx_l1: "أغذية بكافة أنواعها (عصائر، مربّات، صلصة، مخللات، مياه معدنية، مصنّعات لحوم، تونة، بسكويت، بقوليات، خضروات وفواكه طازجة ومجمّدة ومجفّفة... إلخ)",
+    tx_l1: "أغذية بكافة أنواعها (عصائر، مربّات، صلصة، مخللات، مياه معدنية، مصنّعات لحوم، بسكويت، بقوليات، خضروات وفواكه طازجة ومجمّدة ومجفّفة... إلخ)",
     tx_l2: "منسوجات ومفروشات قطنية",
     tx_l3: "منظفات منزلية وخامات المنظفات",
     tx_l4: "مواد البناء والرخام والجرانيت",
@@ -199,6 +200,7 @@ const I18N = {
     ti_l1: "مواد خام صناعية",
     ti_l2: "ماكينات وقطع غيار",
     ti_l3: "سلع غذائية متنوعة",
+    ti_l4: "تونة",
 
     // ---- home: partners ----
     partners_eyebrow: "شركاؤنا",
