@@ -474,7 +474,6 @@ h1, h2, h3, h4 {
   background: var(--navy);
   overflow: hidden;
   padding: 18px 0;
-  transform: rotate(-1.2deg) scale(1.02);
   margin: 10px 0 0;
 }
 .marquee-track {
