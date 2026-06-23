@@ -124,12 +124,24 @@ const I18N = {
     gt_vc3_t: "In Spring Water", gt_vc3_d: "Solid tuna packed in spring water.",
     gt_soon: "Full specifications and certifications coming soon.",
 
-    // Partner factory (placeholder until details arrive)
-    co_factory_name: "Partner Factory",
-    factory_sector: "Food Manufacturing",
-    factory_card_d: "A manufacturing partner — its name, products, and full details are coming soon.",
-    factory_intro: "Details about our partner factory and its product range are coming soon.",
-    factory_soon: "Products coming soon.",
+    // So Good (partner factory)
+    co_factory_name: "So Good",
+    factory_sector: "Frozen & Processed Foods · Est. 2008",
+    factory_card_d: "A 100% Egyptian manufacturer of processed meat, poultry, fish, and cheese — from burgers and shawarma to crispy seafood.",
+    factory_intro: "So Good is a 100% Egyptian food manufacturer founded in 2008. It began supplying restaurants and hotels, then moved into production in 2015 — combining great taste, high quality, and affordable prices under strict quality control. Its range spans processed meat, poultry, fish, ready shawarma skewers, and cheese.",
+    sg_meat: "Meat", sg_chicken: "Chicken", sg_fish: "Fish", sg_cheese: "Cheese",
+    sg_p1_t: "Meat Shawarma", sg_p1_d: "Seasoned beef shawarma, frozen and ready to cook.",
+    sg_p2_t: "Beef Burger", sg_p2_d: "Pure beef burger patties.",
+    sg_p3_t: "Hawawshi", sg_p3_d: "Spiced minced-meat hawawshi.",
+    sg_p4_t: "Oriental Sausage", sg_p4_d: "Egyptian-style oriental sausage.",
+    sg_p5_t: "Pastrami", sg_p5_d: "Seasoned cured-beef pastrami.",
+    sg_p6_t: "Chicken Shawarma", sg_p6_d: "Marinated chicken shawarma, ready to cook.",
+    sg_p7_t: "Cordon Bleu", sg_p7_d: "Breaded chicken stuffed with cheese.",
+    sg_p8_t: "Shish Tawook", sg_p8_d: "Marinated chicken shish tawook.",
+    sg_p9_t: "Crispy Shrimp", sg_p9_d: "Crispy breaded shrimp.",
+    sg_p10_t: "Crispy Fish Fillet", sg_p10_d: "Breaded fish fillet, crispy and ready to fry.",
+    sg_p11_t: "Mozzarella Cheese", sg_p11_d: "Mozzarella for pizza and cooking.",
+    sg_p12_t: "Mixed Cheese", sg_p12_d: "A blend of cheeses for melting.",
 
     // Kaha Company for Preserved Foods
     k_sector: "Canned & Preserved Foods · Est. 1940 · Kaha, Qalyubia",
@@ -312,12 +324,24 @@ const I18N = {
     gt_vc3_t: "في ماء نقي", gt_vc3_d: "تونة صلبة معبّأة في ماء نقي.",
     gt_soon: "المواصفات والشهادات الكاملة قريبًا.",
 
-    // المصنع الشريك (مؤقت حتى تصل التفاصيل)
-    co_factory_name: "المصنع الشريك",
-    factory_sector: "تصنيع غذائي",
-    factory_card_d: "شريك تصنيعي — اسمه ومنتجاته وتفاصيله الكاملة قريبًا.",
-    factory_intro: "تفاصيل عن مصنعنا الشريك وقائمة منتجاته قريبًا.",
-    factory_soon: "المنتجات قريبًا.",
+    // سو جوود (المصنع الشريك)
+    co_factory_name: "سو جوود",
+    factory_sector: "أغذية مجمّدة ومصنّعة · تأسست 2008",
+    factory_card_d: "مصنع مصري 100% للحوم والدواجن والأسماك والجبن المصنّعة — من البرجر والشاورما إلى المأكولات البحرية المقرمشة.",
+    factory_intro: "سو جوود مصنع أغذية مصري 100% تأسس عام 2008. بدأ بتوريد المطاعم والفنادق، ثم دخل مجال التصنيع عام 2015 — جامعًا بين الطعم الرائع والجودة العالية والسعر المناسب، تحت رقابة جودة صارمة. تشمل منتجاته اللحوم والدواجن والأسماك المصنّعة، وأسياخ الشاورما الجاهزة، والجبن.",
+    sg_meat: "لحوم", sg_chicken: "دواجن", sg_fish: "أسماك", sg_cheese: "جبن",
+    sg_p1_t: "شاورما لحم", sg_p1_d: "شاورما لحم بقري متبّلة، مجمّدة وجاهزة للطهي.",
+    sg_p2_t: "برجر لحم", sg_p2_d: "أقراص برجر لحم بقري خالص.",
+    sg_p3_t: "حواوشي", sg_p3_d: "حواوشي لحم مفروم متبّل.",
+    sg_p4_t: "سجق شرقي", sg_p4_d: "سجق شرقي على الطريقة المصرية.",
+    sg_p5_t: "بسطرمة", sg_p5_d: "بسطرمة لحم بقري متبّلة.",
+    sg_p6_t: "شاورما دجاج", sg_p6_d: "شاورما دجاج متبّلة وجاهزة للطهي.",
+    sg_p7_t: "كوردون بلو", sg_p7_d: "دجاج مغطّى بالبقسماط ومحشو بالجبن.",
+    sg_p8_t: "شيش طاووق", sg_p8_d: "شيش طاووق دجاج متبّل.",
+    sg_p9_t: "جمبري مقرمش", sg_p9_d: "جمبري مغطّى بالبقسماط ومقرمش.",
+    sg_p10_t: "فيليه سمك مقرمش", sg_p10_d: "فيليه سمك مغطّى بالبقسماط، مقرمش وجاهز للقلي.",
+    sg_p11_t: "جبن موتزاريلا", sg_p11_d: "موتزاريلا للبيتزا والطهي.",
+    sg_p12_t: "جبن مشكّل", sg_p12_d: "خليط من الأجبان سهل الذوبان.",
 
     // شركة قها للأغذية المحفوظة
     k_sector: "أغذية محفوظة ومعلّبة · تأسست 1940 · قها، القليوبية",

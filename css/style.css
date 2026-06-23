@@ -1122,6 +1122,16 @@ h1, h2, h3, h4 {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lift);
 }
+/* optional product photo at the top of a card (bleeds to the card edges) */
+.product-card-img {
+  margin: -30px -26px 20px;
+  background: var(--paper-warm);
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.product-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 12px; }
 .product-card::after {
   content: "";
   position: absolute;
