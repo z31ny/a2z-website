@@ -78,7 +78,7 @@ if ("IntersectionObserver" in window && counters.length) {
 }
 
 // ---------- Quote form -> mailto (works with no backend) ----------
-const COMPANY_EMAIL = "info@a2zegypt.com"; // <-- change to the real inbox
+const COMPANY_EMAIL = "amrelzeiny@a2zegyptcompany.com"; // quote requests are sent here
 
 const form = document.getElementById("quote-form");
 if (form) {

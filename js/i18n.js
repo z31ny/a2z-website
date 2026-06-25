@@ -17,7 +17,7 @@ const I18N = {
     footer_tagline: "Exporting the best of Egyptian industry and agriculture worldwide — and importing select goods for our clients in Egypt.",
     footer_site: "Site",
     footer_contact_h: "Get in touch",
-    footer_addr: "Cairo, Egypt",
+    footer_addr: "36 Ashgar Darna, Zahraa El Maadi, Cairo",
     footer_rights: "© <span id=\"year\">2026</span> A2Z Egypt Company. All rights reserved.",
     footer_made: "Made in Egypt 🇪🇬",
 
@@ -188,7 +188,7 @@ const I18N = {
     ct_lede: "Whether you have a product list ready or just an idea of what you want to trade — into Egypt or out of it — send it over. We reply to every inquiry within one business day.",
     cc1_t: "Email",
     cc2_t: "Phone & WhatsApp",
-    cc3_t: "Office", cc3_v: "Cairo, Egypt",
+    cc3_t: "Office", cc3_v: "36 Ashgar Darna, Zahraa El Maadi, Cairo, Egypt",
     cc4_t: "Working hours", cc4_v: "Sunday – Thursday, 9:00 – 17:00 (Cairo time)",
     form_title: "Request a quote",
     form_note: "Fill this in and it will open your email app with everything pre-written — just press send.",
@@ -198,7 +198,7 @@ const I18N = {
     f_message: "Message *",
     f_msg_ph: "Which products, what quantity, and where are we shipping?",
     form_btn: "Send inquiry <span class=\"arrow\">→</span>",
-    form_success: "Your email app should open now — if it doesn't, write to us directly at info@a2zegypt.com.",
+    form_success: "Your email app should open now — if it doesn't, write to us directly at amrelzeiny@a2zegyptcompany.com.",
   },
 
   ar: {
@@ -215,7 +215,7 @@ const I18N = {
     footer_tagline: "نصدّر أفضل ما تنتجه الصناعة والزراعة المصرية إلى العالم — ونستورد بعناية لعملائنا في مصر.",
     footer_site: "الموقع",
     footer_contact_h: "تواصل معنا",
-    footer_addr: "القاهرة، مصر",
+    footer_addr: "36 أشجار دارنا، زهراء المعادي، القاهرة",
     footer_rights: "© <span id=\"year\">2026</span> شركة A2Z إيجيبت. جميع الحقوق محفوظة.",
     footer_made: "صُنع في مصر 🇪🇬",
 
@@ -386,7 +386,7 @@ const I18N = {
     ct_lede: "سواء كانت لديك قائمة منتجات جاهزة، أو مجرد فكرة عما تريد استيراده أو تصديره — أرسلها لنا. نرد على كل استفسار خلال يوم عمل واحد.",
     cc1_t: "البريد الإلكتروني",
     cc2_t: "هاتف وواتساب",
-    cc3_t: "المكتب", cc3_v: "القاهرة، مصر",
+    cc3_t: "المكتب", cc3_v: "36 أشجار دارنا، زهراء المعادي، القاهرة",
     cc4_t: "مواعيد العمل", cc4_v: "الأحد – الخميس، 9:00 – 17:00 (بتوقيت القاهرة)",
     form_title: "اطلب عرض سعر",
     form_note: "املأ البيانات وسيفتح تطبيق البريد لديك برسالة جاهزة — كل ما عليك أن تضغط إرسال.",
@@ -396,7 +396,7 @@ const I18N = {
     f_message: "رسالتك *",
     f_msg_ph: "ما المنتجات المطلوبة؟ وما الكمية؟ وإلى أين الشحن؟",
     form_btn: "أرسل طلبك <span class=\"arrow\">→</span>",
-    form_success: "سيفتح تطبيق البريد لديك الآن — وإن لم يفتح، راسلنا مباشرةً على info@a2zegypt.com.",
+    form_success: "سيفتح تطبيق البريد لديك الآن — وإن لم يفتح، راسلنا مباشرةً على amrelzeiny@a2zegyptcompany.com.",
   },
 };
 
