@@ -77,32 +77,77 @@ if ("IntersectionObserver" in window && counters.length) {
   counters.forEach((el) => cio.observe(el));
 }
 
-// ---------- Quote form -> mailto (works with no backend) ----------
-const COMPANY_EMAIL = "amrelzeiny@a2zegyptcompany.com"; // quote requests are sent here
+// ---------- Quote form -> Web3Forms (auto-delivers to the inbox) ----------
+// The access key is a public, domain-restricted client key — safe to ship.
+const WEB3FORMS_KEY = "baed2feb-da81-4d1b-8e7e-94dd44ef667f";
+const COMPANY_EMAIL = "amrelzeiny@a2zegyptcompany.com"; // quote requests are delivered here
 
 const form = document.getElementById("quote-form");
 if (form) {
-  form.addEventListener("submit", (e) => {
+  const statusEl = document.getElementById("form-success");
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const t = (key, fallback) => {
+    try {
+      const dict = typeof I18N !== "undefined" && I18N[document.documentElement.lang];
+      return (dict && dict[key]) || fallback;
+    } catch (_) {
+      return fallback;
+    }
+  };
+
+  const setStatus = (key, fallback, ok) => {
+    if (!statusEl) return;
+    statusEl.textContent = t(key, fallback);
+    statusEl.classList.toggle("is-error", !ok);
+    statusEl.classList.add("show");
+  };
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
 
-    const v = (id) => (document.getElementById(id) || {}).value || "-";
-    const subject = `Quote request from ${v("f-name")}${v("f-company") !== "-" ? " (" + v("f-company") + ")" : ""}`;
-    const body = [
-      `Name: ${v("f-name")}`,
-      `Company: ${v("f-company")}`,
-      `Email: ${v("f-email")}`,
-      `Country: ${v("f-country")}`,
-      `Interested in: ${v("f-interest")}`,
-      ``,
-      `Message:`,
-      v("f-message"),
-    ].join("\n");
+    const v = (id) => (document.getElementById(id) || {}).value || "";
+    const payload = {
+      access_key: WEB3FORMS_KEY,
+      subject: `New quote request — ${v("f-name") || "A2Z website"}`,
+      from_name: "A2Z Egypt Company website",
+      name: v("f-name"),
+      email: v("f-email"),
+      replyto: v("f-email"),
+      company: v("f-company"),
+      country: v("f-country"),
+      interested_in: v("f-interest"),
+      message: v("f-message"),
+      botcheck: form.querySelector('[name="botcheck"]') ? form.querySelector('[name="botcheck"]').checked : false,
+    };
 
-    window.location.href =
-      `mailto:${COMPANY_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const btnDefault = submitBtn ? submitBtn.innerHTML : "";
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = t("form_sending", "Sending…");
+    }
+    if (statusEl) statusEl.classList.remove("show");
 
-    const success = document.getElementById("form-success");
-    if (success) success.classList.add("show");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json();
+      if (json.success) {
+        form.reset();
+        setStatus("form_success", "Thanks! Your request has been sent — we'll reply within one business day.", true);
+      } else {
+        setStatus("form_error", "Something went wrong. Please email us directly at amrelzeiny@a2zegyptcompany.com.", false);
+      }
+    } catch (err) {
+      setStatus("form_error", "Something went wrong. Please email us directly at amrelzeiny@a2zegyptcompany.com.", false);
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = btnDefault;
+      }
+    }
   });
 }

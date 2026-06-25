@@ -1292,6 +1292,7 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
 }
 .form-success.show { display: block; animation: rise 0.5s var(--ease-out) both; }
+.form-success.is-error { background: var(--orange-pale); color: var(--orange); }
 
 /* ============================================================
    FOOTER

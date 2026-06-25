@@ -145,8 +145,11 @@
             <textarea id="f-message" name="message" required data-i18n-ph="f_msg_ph" placeholder="Which products, what quantity, and where are we shipping?"></textarea>
           </div>
 
+          <!-- spam honeypot: hidden from people, bots tend to tick it -->
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />
+
           <button type="submit" class="btn btn-primary" data-i18n="form_btn">Send inquiry <span class="arrow">→</span></button>
-          <p class="form-success" id="form-success" data-i18n="form_success">Your email app should open now — if it doesn't, write to us directly at amrelzeiny@a2zegyptcompany.com.</p>
+          <p class="form-success" id="form-success" data-i18n="form_success">Thanks — your request has been sent. We'll reply within one business day.</p>
         </form>
 
       </div>
